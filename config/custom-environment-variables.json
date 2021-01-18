@@ -1,0 +1,4 @@
+{
+  "jwtPrivateKey": "anfibiosgo_jwt_pk",
+  "db": "anfibiosgo_db"
+}
