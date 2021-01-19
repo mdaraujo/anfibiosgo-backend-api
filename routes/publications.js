@@ -28,7 +28,7 @@ router.post('/', auth, async (req, res) => {
     },
     species: {
       _id: species._id,
-      name: species.name,
+      commonName: species.commonName,
     }
   });
 

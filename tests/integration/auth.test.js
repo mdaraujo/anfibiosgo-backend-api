@@ -37,7 +37,10 @@ describe('auth middleware', () => {
 
     species = new Species({
       _id: speciesId,
-      name: '12345',
+      commonName: '12345',
+      scientificName: '12345',
+      description: '12345',
+      status: '12345',
     });
     await species.save();
 
@@ -48,7 +51,7 @@ describe('auth middleware', () => {
       },
       species: {
         _id: speciesId,
-        name: '12345',
+        commonName: '12345',
       }
     });
 

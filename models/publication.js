@@ -16,7 +16,7 @@ const publicationSchema = new mongoose.Schema({
   },
   species: {
     type: new mongoose.Schema({
-      name: {
+      commonName: {
         type: String,
         required: true,
         trim: true,
