@@ -1,12 +1,12 @@
+const express = require('express');
+const router = express.Router();
+const auth = require('../middleware/auth');
+const validateObjectId = require('../middleware/validateObjectId');
 const { Publication, validatePublication } = require('../models/publication');
 const { Species } = require('../models/species');
 const { User } = require('../models/user');
-const auth = require('../middleware/auth');
-const mongoose = require('mongoose');
-const express = require('express');
-const router = express.Router();
 
-router.get('/', async (req, res) => {
+router.get('/', auth, async (req, res) => {
   const publications = await Publication.find().sort('-date');
   res.send(publications);
 });
@@ -21,7 +21,9 @@ router.post('/', auth, async (req, res) => {
   const species = await Species.findById(req.body.speciesId);
   if (!species) return res.status(400).send('Invalid species.');
 
-  let publication = new Publication({
+  // TODO do not pass user in the req body, extract from token
+
+  const publication = new Publication({
     user: {
       _id: user._id,
       name: user.name,
@@ -37,7 +39,7 @@ router.post('/', auth, async (req, res) => {
 
 });
 
-router.get('/:id', async (req, res) => {
+router.get('/:id', [auth, validateObjectId], async (req, res) => {
   const publication = await Publication.findById(req.params.id);
 
   if (!publication) return res.status(404).send('The publication with the given ID was not found.');

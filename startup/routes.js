@@ -1,6 +1,6 @@
 const express = require('express');
 const users = require('../routes/users');
-const auth = require('../routes/auth');
+const auth = require('../routes/login');
 const species = require('../routes/species');
 const publications = require('../routes/publications');
 
