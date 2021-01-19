@@ -19,8 +19,11 @@ module.exports = async function () {
 
     winston.info('Species already exist. Updating');
 
-    // for (let species of data.species) {
-    //     // TODO update all species to preserve the ids
-    //     // console.log(species);
-    // }
+    for (let speciesData of data.species) {
+
+        await Species.updateOne(
+            { commonName: speciesData.commonName },
+            { $set: speciesData },
+            { runValidators: true });
+    }
 }

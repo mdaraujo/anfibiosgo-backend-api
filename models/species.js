@@ -2,7 +2,25 @@ const Joi = require('joi');
 const mongoose = require('mongoose');
 
 const speciesSchema = new mongoose.Schema({
-  name: {
+  commonName: {
+    type: String,
+    required: true,
+    minlength: 5,
+    maxlength: 100
+  },
+  scientificName: {
+    type: String,
+    required: true,
+    minlength: 5,
+    maxlength: 100
+  },
+  description: {
+    type: String,
+    required: true,
+    minlength: 5,
+    maxlength: 1200
+  },
+  status: {
     type: String,
     required: true,
     minlength: 5,
