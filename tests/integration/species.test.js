@@ -1,6 +1,7 @@
 const request = require('supertest');
 const { Species } = require('../../models/species');
 const mongoose = require('mongoose');
+const populateDB = require('../../startup/populate_db');
 
 let server;
 
@@ -12,20 +13,14 @@ describe('/api/species', () => {
   });
 
   describe('GET /', () => {
-    it('should return all species', async () => {
-      const species = [
-        { name: 'species1' },
-        { name: 'species2' },
-      ];
+    it('should return all 17 species', async () => {
 
-      await Species.collection.insertMany(species);
+      await populateDB();
 
       const res = await request(server).get('/api/species');
 
       expect(res.status).toBe(200);
-      expect(res.body.length).toBe(2);
-      expect(res.body.some(g => g.name === 'species1')).toBeTruthy();
-      expect(res.body.some(g => g.name === 'species2')).toBeTruthy();
+      expect(res.body.length).toBe(17);
     });
   });
 

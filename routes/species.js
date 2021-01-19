@@ -7,7 +7,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', async (req, res) => {
-  const species = await Species.find().sort('name');
+  const species = await Species.find();
   res.send(species);
 });
 

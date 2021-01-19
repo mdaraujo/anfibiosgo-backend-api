@@ -1,0 +1,106 @@
+{
+  "species": [
+    {
+      "commonName": "Rela comum",
+      "scientificName": "Hyla molleri (Linnaeus, 1758)",
+      "description": "Comprimento inferior a 5cm, de coloração normalmente verde-vivo, podendo ser cinzentas/acastanhadas. Possui olhos proeminentes e laterais de íris dourada com reticulado escuro. Tem membros compridos com 5 dedos nas patas posteriores e 4 nas anteriores. Os dedos terminam em discos adesivos. A pele é lisa e brilhante no dorso e mais granulosa no ventre. Apresentam tipicamente uma linha escura lateral que percorre do focinho à região inguinal, passando pelo olho. Encontrada na vegetação ribeirinha ou perto de água. Distribui-se a norte do Tejo.",
+      "status": "Quase Ameaçado (NT)"
+    },
+    {
+      "commonName": "Rela meridional",
+      "scientificName": "Hyla maridionalis (Boettger, 1874)",
+      "description": "Possui um comprimento de 4cm, cor verde-viva, com uma lista escura que sai de trás do olho e termina por cima do ombro. Possui olhos laterais proeminentes com a íris dourada e uma pupila elíptica e horizontal. Os dedos são terminados por pequenos discos adesivos. As patas da frente têm 4 dedos e as de trás 5. Encontrada em vegetação ribeirinha ou perto de água. Encontra-se a sul do tejo tendo algumas populações a norte deste. Nestes locais pode ocorrer hibridação com rela comum.",
+      "status": "Pouco Preocupante (LC)"
+    },
+    {
+      "commonName": "Rã de focinho pontiagudo",
+      "scientificName": "Discoglossos galganoi (Capula, Nascetti, Lanza, Bullini & Crespo, 1985)",
+      "description": "A Rã-de-focinho-pontiagudo é um sapo com aparência de rã. Pode atingir 6,5 cm de comprimento e apresenta focinho pontiagudo, cabeça larga, a (mandíbula sobressai relativamente à maxila) e olhos proeminentes com pupila arredondada e duas pregas cutâneas atrás. Membros anteriores robustos e os posteriores maiores e adaptadas ao salto com membranas interdigitais pouco desenvolvidas. Coloração acastanhada com manchas e riscas no dorso e esbranquiçada no ventre. Encontrado na água, perto dela e em locais húmidos.",
+      "status": "Quase Ameaçado (NT)"
+    },
+    {
+      "commonName": "Rã ibérica",
+      "scientificName": "Rana iberica (Boulenger, 1879)",
+      "description": "Comprimento raramente ultrapassa os 5,5 cm. Possui um focinho pontiagudo, olhos grandes relativamente afastados com pupila horizontal elíptica e tímpano não visível. Pele lisa, com pequenos grânulos na região dorsal. Coloração dorsal variável, geralmente em tons acastanhados, alaranjados ou avermelhados. Possui uma mancha triangular pós ocular escura, que vai diminuindo de largura até à parte posterior, e, debaixo desta, uma estreita banda esbranquiçada que se estende desde a parte inferior do olho até ao ângulo da boca. A região ventral é esbranquiçada, podendo apresentar um reticulado escuro mais intenso na garganta. Membros anteriores com 4 dedos e membros posteriores com 5 dedos unidos por membranas interdigitais bem desenvolvidas. Encontrada na água ou perto desta.",
+      "status": "Quase Ameaçado (NT)"
+    },
+    {
+      "commonName": "Rã verde",
+      "scientificName": "Pelophylax perezi (Seoane, 1885)",
+      "description": "Geralmente não ultrapassa os 7 cm de comprimento. Possui olhos proeminentes, próximos entre si, com pupila horizontal. Os tímpanos, situados atrás dos olhos, são bem visíveis. Os membros posteriores são compridos e com membrana interdigital bem desenvolvida. A coloração dorsal é esverdeada ou acastanhada. Tem duas pregas glandulares muito marcadas dorso-lateralmente e possui normalmente uma linha vertebral verde clara. O ventre é esbranquiçado com manchas cinzentas. Muito comum, pode ser encontrada na água ou perto desta.",
+      "status": "Pouco Preocupante (LC)"
+    },
+    {
+      "commonName": "Salamandra de costelas salientes",
+      "scientificName": "Pleurodeles waltl (Michahelles, 1830)",
+      "description": "Cabeça grande, larga e achatada com olhos pequenos. Dorso rugoso, acinzentado, acastanhado ou esverdeado. Ao longo dos flancos, possui uma linha de sete a nove saliências alaranjadas, que coincidem com os extremos das costelas. Cauda longa e achatada. Grande porte podendo atingir 30 cm de comprimento. Maioritariamente encontrada na água ou perto dela.",
+      "status": "Pouco Preocupante (LC)"
+    },
+    {
+      "commonName": "Salamandra de pintas amarelas",
+      "scientificName": "Salamandra salamandra (Linnaeus, 1758)",
+      "description": "Corpo robusto com sulcos nos flancos, pele lisa e brilhante, preta, com manchas amarelas e por vezes avermelhadas. Glândulas parótidas grandes, e uma fileira de poros glandulares em cada lado da linha média vertebral. Porte médio até 20 cm de comprimento. Encontrada em terra perto de locais húmidos.",
+      "status": "Pouco Preocupante (LC)"
+    },
+    {
+      "commonName": "Salamandra lusitânica",
+      "scientificName": "Chioglossa lusitanica (Barbosa du Bocage, 1864)",
+      "description": "Corpo alongado esguio, de cor escura com duas listas dorsais douradas que se unem na cauda. Cauda longa (até 2 terços do comprimento do animal) de secção circular. Até 16 cm de comprimento. Maioritariamente encontrada em terra perto de água.",
+      "status": "Vulnerável (VU)"
+    },
+    {
+      "commonName": "Sapinho de verrugas verdes",
+      "scientificName": "Pelodytes puntactus (Bonaparte, 1838)",
+      "description": "Comprimento entre 3,0 a 4,5cm. Cabeça achatada com um focinho curto e arredondado. Possuem verrugas verde-azeitona um tanto alongadas que se destacam do dorso verde-claro, muitas vezes criando algumas fileiras ao longo do corpo. Encontrado em locais húmidos e perto da água.",
+      "status": "Não Avaliado (NE)"
+    },
+    {
+      "commonName": "Sapo comum",
+      "scientificName": "Bufo spinosus (Linnaeus, 1758)",
+      "description": "Pode atingir 21 cm de comprimento. Possui olhos proeminentes, pupila horizontal e íris é geralmente avermelhada. As glândulas parótidas obliquas proeminentes. Os membros são robustos, os anteriores têm 4 dedos curtos e grossos e os posteriores possuem 5 dedos com membranas interdigitais até metade do seu comprimento. A pele é rugosa com verrugas salientes no dorso. De cor castanha, amarelada ou quase negra. Ventre branco ou amarelo. Encontrado em terra.",
+      "status": "Pouco Preocupante (LC)"
+    },
+    {
+      "commonName": "Sapo corredor",
+      "scientificName": "Epidalea calamita (Laurenti, 1768)",
+      "description": "Pode alcançar 9 cm de comprimento. Pele rugosa com verrugas grandes e aplanadas. Cor variável, sendo mais comum verde sobre um fundo claro geralmente com linha dorsal amarela/verde. Ventre esbranquiçado ou acinzentado com manchas castanhas ou pretas. Olhos proeminentes, com pupila horizontal de forma elíptica e íris verde ou amarelada com pigmentos escuros. As glândulas parótidas são conspícuas e paralelas entre si. Possui membros curtos e robustos. Encontrado em terra.",
+      "status": "Pouco Preocupante (LC)"
+    },
+    {
+      "commonName": "Sapo de unha negra",
+      "scientificName": "Pelobates cultripes (Cuvier, 1829)",
+      "description": "Pode atingir 10 cm de comprimento. aspeto robusto, a cabeça destaca-se pouco do corpo e de focinho arredondado. Olhos proeminentes, laterias, com pupila vertical. Não possui glândulas parótidas e tímpano não visível. Membros anteriores com 4 dedos livres e os posteriores com 5 dedos unidos por extensas membranas interdigitais, cujo tubérculo metatársico, muito desenvolvido, forma uma espora negra. Pele é lisa e de cor amarelada, acinzentada, esverdeada ou castanha, com ou sem manchas mais escuras. Ventre branco, amarelo ou cinzento. Encontrado em zonas arenosas e de terra solta.",
+      "status": "Pouco Preocupante (LC)"
+    },
+    {
+      "commonName": "Sapo parteiro comum",
+      "scientificName": "Alytes obstetricians (Laurenti, 1768)",
+      "description": "Aspeto robusto, cabeça grande e focinho arredondado. Olhos grandes, proeminentes, com pupila vertical. Tímpano visível e glândulas parótidas pouco definidas. Membros curtos e robustos; os anteriores têm 4 dedos e 3 tubérculos palmares e os posteriores têm 5 dedos sem tubérculos palmares.\nColoração dorsal variável, havendo predominância de tons acinzentados com manchas. Pode apresentar verrugas amarelas ou alaranjadas distribuídas pelo dorso e membros. O ventre é esbranquiçado com manchas e pontos escuros. Encontrado em terra",
+      "status": "Pouco Preocupante (LC)"
+    },
+    {
+      "commonName": "Sapo parteiro ibérico",
+      "scientificName": "Alytes cisternasii (Boscá, 1879)",
+      "description": "Facilmente confundível com sapo parteiro comum. Mede geralmente menos de 4,5 cm de comprimento. Os olhos são proeminentes e laterais com pupila. 2 glândulas parótidas ovoides situadas na parte posterior da cabeça. Possuem dois tubérculos palmares nas patas dianteiras. A pele é ligeiramente verrugosa, dorso de cor parda com manchas mais escuras (castanhas, cinzentas ou esverdeadas) e ventre claro. Apresentam pequenas verrugas alaranjadas na cabeça, dorso e membros. Encontrado em terra.",
+      "status": "Pouco Preocupante (LC)"
+    },
+    {
+      "commonName": "Tritão de patas espalmadas",
+      "scientificName": "Lissotriton helveticus (Razoumowsky, 1789)",
+      "description": "Confundível com o seu primo Tritão de ventre laranja. Coloração dorsal variável com predominância de tons castanhos esverdeados, com algumas manchas negras e ventre amarelado. Cabeça arredondada e aplanada, com 3 sulcos longitudinais. Banda escura entre o orifício nasal e o olho, podendo prolongar-se até ao pescoço. Cauda achatada lateralmente. Durante o período de reprodução, os machos desenvolvem um filamento preto na parte terminal da cauda, uma membrana interdigital escura nas patas posteriores e uma crista caudal baixa. Pequeno porte entre 65 e 90 mm. Encontrado na água ou perto dela.",
+      "status": "Vulnerável (VU)"
+    },
+    {
+      "commonName": "Tritão de ventre laranja",
+      "scientificName": "Lissotriton boscai (Lataste, 1879)",
+      "description": "Pequeno porte com comprimento total de 65 a 90 mm, cauda achatada lateralmente, região ventral laranja, com manchas escuras que podem formar linhas irregulares nas zonas laterais. Região dorsal de tonalidade castanha, verde-azeitona ou amarelada. Por vezes é evidente uma linha lateral vertebral mais clara. Encontrado na água ou perto dela.",
+      "status": "Pouco Preocupante (LC)"
+    },
+    {
+      "commonName": "Tritão marmoreado",
+      "scientificName": "Triturus marmoratus (Latreille, 1800)",
+      "description": "Cabeça achatada, com contorno arredondado e olhos proeminentes em posição lateral. Pele granulosa com coloração dorsal verde (por vezes castanha, mas com contorno das manchas evidente), e manchas escuras de dimensão e distribuição variáveis mas que geralmente se tocam umas nas outras. Ventre branco, creme ou cinza. Linha vertebral amarela, laranja ou vermelha nas fêmeas, e nos machos apresenta uma alternância de tons claros e escuros que na época de reprodução se transforma numa crista com bandas verticais claras e escuras alternadas. Encontrado a norte do rio Tejo e com porte médio até 17 cm de comprimento. Encontrado na água ou perto dela.",
+      "status": "Pouco Preocupante (LC)"
+    }
+  ]
+}
