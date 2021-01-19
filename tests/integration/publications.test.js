@@ -85,13 +85,6 @@ describe('/api/publications', () => {
       expect(res.status).toBe(401);
     });
 
-    it('should return a publication if valid id is passed', async () => {
-      const res = await exec();
-
-      expect(res.status).toBe(200);
-      expect(res.body).toHaveProperty('user.name', publication.user.name);
-    });
-
     it('should return 404 if invalid id is passed', async () => {
       publicationId = 1;
 
@@ -106,6 +99,13 @@ describe('/api/publications', () => {
       const res = await exec();
 
       expect(res.status).toBe(404);
+    });
+
+    it('should return a publication if valid id is passed', async () => {
+      const res = await exec();
+
+      expect(res.status).toBe(200);
+      expect(res.body).toHaveProperty('user.name', publication.user.name);
     });
 
   });
