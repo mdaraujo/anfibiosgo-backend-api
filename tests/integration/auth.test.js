@@ -16,22 +16,20 @@ describe('auth middleware', () => {
     return request(server)
       .post('/api/publications')
       .set('x-auth-token', token)
-      .send({ userId, speciesId });
+      .send({ speciesId });
   };
 
   beforeEach(async () => {
     server = require('../../index');
 
-    userId = mongoose.Types.ObjectId();
     speciesId = mongoose.Types.ObjectId();
 
     user = new User({
-      _id: userId,
+      _id: mongoose.Types.ObjectId(),
       name: '12345',
       email: '12345',
       password: '12345',
     });
-    await user.save();
 
     token = user.generateAuthToken();
 

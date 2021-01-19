@@ -6,6 +6,7 @@ describe('auth middleware', () => {
   it('should populate req.user with the payload of a valid JWT', () => {
     const user = {
       _id: mongoose.Types.ObjectId().toHexString(),
+      name: "12345",
       isAdmin: true
     };
     const token = new User(user).generateAuthToken();

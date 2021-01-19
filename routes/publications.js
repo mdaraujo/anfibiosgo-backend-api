@@ -15,18 +15,13 @@ router.post('/', auth, async (req, res) => {
   const { error } = validatePublication(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
-  const user = await User.findById(req.body.userId);
-  if (!user) return res.status(400).send('Invalid user.');
-
   const species = await Species.findById(req.body.speciesId);
   if (!species) return res.status(400).send('Invalid species.');
 
-  // TODO do not pass user in the req body, extract from token
-
   const publication = new Publication({
     user: {
-      _id: user._id,
-      name: user.name,
+      _id: req.user._id,
+      name: req.user.name,
     },
     species: {
       _id: species._id,

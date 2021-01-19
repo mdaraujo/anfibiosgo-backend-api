@@ -37,7 +37,6 @@ const Publication = mongoose.model('Publication', publicationSchema);
 
 function validatePublication(publication) {
   const schema = {
-    userId: Joi.objectId().required(),
     speciesId: Joi.objectId().required()
   };
 

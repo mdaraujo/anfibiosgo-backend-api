@@ -7,6 +7,7 @@ describe('user.generateAuthToken', () => {
   it('should return a valid JWT', () => {
     const payload = {
       _id: new mongoose.Types.ObjectId().toHexString(),
+      name: "12345",
       isAdmin: true
     };
     const user = new User(payload);

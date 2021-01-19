@@ -111,30 +111,17 @@ describe('/api/publications', () => {
   });
 
   describe('POST /', () => {
-    let userId;
     let speciesId;
-    let user;
 
     const exec = () => {
       return request(server)
         .post('/api/publications')
         .set('x-auth-token', token)
-        .send({ userId, speciesId });
+        .send({ speciesId });
     };
 
     beforeEach(async () => {
-      userId = mongoose.Types.ObjectId();
       speciesId = mongoose.Types.ObjectId();
-
-      user = new User({
-        _id: userId,
-        name: '12345',
-        email: '12345',
-        password: '12345',
-      });
-      await user.save();
-
-      token = user.generateAuthToken();
 
       species = new Species({
         _id: speciesId,
@@ -144,6 +131,15 @@ describe('/api/publications', () => {
         status: '12345',
       });
       await species.save();
+
+      const user = new User({
+        _id: mongoose.Types.ObjectId(),
+        name: '12345',
+        email: '12345',
+        password: '12345',
+      });
+
+      token = user.generateAuthToken();
     });
 
     it('should return 401 if client is not logged in', async () => {
@@ -154,24 +150,8 @@ describe('/api/publications', () => {
       expect(res.status).toBe(401);
     });
 
-    it('should return 400 if userId is not provided', async () => {
-      userId = '';
-
-      const res = await exec();
-
-      expect(res.status).toBe(400);
-    });
-
     it('should return 400 if speciesId is not provided', async () => {
       speciesId = '';
-
-      const res = await exec();
-
-      expect(res.status).toBe(400);
-    });
-
-    it('should return 400 if userId is not valid', async () => {
-      userId = mongoose.Types.ObjectId();
 
       const res = await exec();
 
