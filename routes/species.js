@@ -1,10 +1,7 @@
-const validateObjectId = require('../middleware/validateObjectId');
-const auth = require('../middleware/auth');
-const admin = require('../middleware/admin');
-const { Species } = require('../models/species');
-const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
+const validateObjectId = require('../middleware/validateObjectId');
+const { Species } = require('../models/species');
 
 router.get('/', async (req, res) => {
   const species = await Species.find();

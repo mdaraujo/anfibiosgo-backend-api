@@ -1,19 +1,17 @@
 const express = require('express');
 const router = express.Router();
 const auth = require('../middleware/auth');
+const validate = require('../middleware/validate');
 const validateObjectId = require('../middleware/validateObjectId');
 const { Publication, validatePublication } = require('../models/publication');
 const { Species } = require('../models/species');
-const { User } = require('../models/user');
 
 router.get('/', auth, async (req, res) => {
   const publications = await Publication.find().sort('-date');
   res.send(publications);
 });
 
-router.post('/', auth, async (req, res) => {
-  const { error } = validatePublication(req.body);
-  if (error) return res.status(400).send(error.details[0].message);
+router.post('/', [auth, validate(validatePublication)], async (req, res) => {
 
   const species = await Species.findById(req.body.speciesId);
   if (!species) return res.status(400).send('Invalid species.');
