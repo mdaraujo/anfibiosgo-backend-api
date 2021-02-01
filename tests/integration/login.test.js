@@ -1,19 +1,23 @@
 const request = require('supertest');
+const jwt = require('jsonwebtoken');
+const config = require('config');
 const { User } = require('../../models/user');
 
 describe('api/login', () => {
   let server;
+  let name;
   let email;
   let password;
 
   beforeEach(async () => {
     server = require('../../index');
 
+    name = "12345";
     email = "12345@test.com";
     password = "12345";
 
     await request(server).post('/api/users').send({
-      name: '12345', email, password
+      name, email, password
     });
   });
 
@@ -64,6 +68,20 @@ describe('api/login', () => {
     const res = await exec();
 
     expect(res.status).toBe(200);
+  });
+
+  it('should return token if we have a valid request', async () => {
+    const res = await exec();
+
+    let decoded;
+    try {
+      decoded = jwt.verify(res.text, config.get('jwtPrivateKey'));
+      expect(decoded).toHaveProperty('name', name);
+    }
+    catch (ex) {
+      throw ex;
+    }
+
   });
 
 });
