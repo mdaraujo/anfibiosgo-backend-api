@@ -2,10 +2,7 @@ const winston = require('winston');
 const express = require('express');
 const app = express();
 
-if (process.env.NODE_ENV !== 'test') {
-    require('./startup/logging')();
-}
-
+require('./startup/logging')();
 require('./startup/prod')(app);
 require('./startup/routes')(app);
 require('./startup/db')();
