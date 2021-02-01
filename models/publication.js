@@ -36,11 +36,11 @@ const publicationSchema = new mongoose.Schema({
 const Publication = mongoose.model('Publication', publicationSchema);
 
 function validatePublication(publication) {
-  const schema = {
+  const schema = Joi.object({
     speciesId: Joi.objectId().required()
-  };
+  });
 
-  return Joi.validate(publication, schema);
+  return schema.validate(publication);
 }
 
 exports.Publication = Publication;
