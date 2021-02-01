@@ -27,9 +27,9 @@ describe('/api/publications', () => {
 
   afterEach(async () => {
     await server.close();
-    await Publication.remove({});
-    await User.remove({});
-    await Species.remove({});
+    await Publication.deleteMany({});
+    await User.deleteMany({});
+    await Species.deleteMany({});
   });
 
   describe('GET /', () => {

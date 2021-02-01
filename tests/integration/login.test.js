@@ -23,7 +23,7 @@ describe('api/login', () => {
 
   afterEach(async () => {
     await server.close();
-    await User.remove({});
+    await User.deleteMany({});
   });
 
   const exec = () => {

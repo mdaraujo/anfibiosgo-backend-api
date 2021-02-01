@@ -11,7 +11,7 @@ describe('/api/species', () => {
 
   afterEach(async () => {
     await server.close();
-    await Species.remove({});
+    await Species.deleteMany({});
   });
 
   describe('GET /', () => {

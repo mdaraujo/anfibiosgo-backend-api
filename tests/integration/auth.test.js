@@ -58,9 +58,9 @@ describe('auth middleware', () => {
 
   afterEach(async () => {
     await server.close();
-    await Publication.remove({});
-    await User.remove({});
-    await Species.remove({});
+    await Publication.deleteMany({});
+    await User.deleteMany({});
+    await Species.deleteMany({});
   });
 
   it('should return 401 if no token is provided', async () => {
